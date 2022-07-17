@@ -1,3 +1,5 @@
+import 'package:covid_app/screens/country_list.dart';
+import 'package:covid_app/screens/detail_screen.dart';
 import 'package:covid_app/screens/splash_screen.dart';
 import 'package:covid_app/screens/world_states.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +23,9 @@ class MyApp extends StatelessWidget {
       ),
       home: const SplashScreen(),
       routes: {
-        WorldState.routName:(context) => const WorldState(),
+
+        WorldState.routName: (context) => const WorldState(),
+        CountryList.routName: (context) => const CountryList(),
       },
     );
   }
